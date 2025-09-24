@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Semantic Bio</title>
+</head>
+<style>
+  nav a:hover{
+    color: black;
+  }
+
+  nav a{
+    color: aqua;
+   
+  }
+  .card {
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+  
+</style>
+<body>
+
+  <header>
+    <h1>Alex's Bio Page</h1>
+    <nav class="nav">
+      <a href="#about">About</a> |
+      <a href="#skills">Skills</a> |
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I love HTML, music, and coffee.</p>
+    </section>
+
+    <section id="skills">
+      <h2>My Skills</h2>
+      <ul>
+        <li>HTML</li>
+        <li>Design</li>
+        <li>Writing</li>
+      </ul>
+    </section>
+
+    <article>
+      <h2>My First Blog Post</h2>
+      <p>Learning semantic HTML makes my code clean and organized!</p>
+    </article>
+  </main>
+
+  <footer>
+    <p>© 2025 Alex Coder. All rights reserved.</p>
+  </footer>
+  <audio controls>
+  <source src="2Baba-Raindrops-(NaiJamz.com).mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+<video width="320" height="240" controls>
+  <source src="movie.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+<iframe 
+src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.019017048218!2d-122.4194154846817!3d37.77492927975916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c6df8a68d%3A0x9e9793e680c9b74f!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1628569203841!5m2!1sen!2sus" 
+width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+<form action="/submit" method="post">
+  <fieldset>
+    <legend>Personal Info</legend>
+    <label for="fname">First Name:</label>
+    <input id="fname" name="fname" type="text">
+  </fieldset>
+</form>
+<nav style="display: flex; background: #eee; padding: 10px;">
+  <a href="#" style="margin-right: 20px;">Home</a>
+  <a href="#" style="margin-right: 20px;">About</a>
+  <a href="#">Contact</a>
+</nav>
+
+<header>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="home"><h2>Welcome</h2></section>
+<section id="about"><h2>About Us</h2></section>
+<section id="services"><h2>Our Services</h2></section>
+<section id="contact"><h2>Contact</h2></section>
+
+</body>
+</html>

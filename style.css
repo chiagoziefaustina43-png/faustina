@@ -1,0 +1,239 @@
+/* BODY */
+body {
+  background: linear-gradient(to right, #7e2e2e, #c45555, #c67a7a);
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+
+
+/* NAVBAR */
+.navbar {
+  width: 100%;
+  height: 75px;
+  display: flex;
+  padding: 5px 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icon {
+  width: 100px;
+  height: 70px;
+}
+
+.logo {
+  width: 125px;
+  margin-right: 15px;
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+  gap: 80px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: bisque;
+  font-weight: bold;
+}
+
+.menu ul li a:hover {
+  color: black;
+}
+
+/* SEARCH BAR */
+.search {
+  display: flex;
+  align-items: center;
+}
+
+.srch {
+  background: linear-gradient(to right, #dad4a9, #c6c49a);
+  border: 1px solid black;
+  color: black;
+  height: 40px;
+  width: 300px;
+  border-radius: 20px;
+  padding-left: 10px;
+}
+
+.btn {
+  background: linear-gradient(to right, #c45555, #c67a7a);
+  border: 1px solid black;
+  color: bisque;
+  height: 40px;
+  width: 60px;
+  padding: 7px;
+  margin-left: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: black;
+}
+
+/* FORM */
+.form {
+  position: absolute;
+  top: 150px;
+  right: 20px;
+  width: 300px;
+  background: linear-gradient(to right, #7e2e2e, #c45555, #c67a7a);
+  padding: 20px;
+  color: bisque;
+  border-radius: 20px;
+  border: 1px solid black;
+  box-shadow: 20px 20px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* FORM INPUTS */
+.form input {
+  background: bisque;
+  border: none;
+  color: black;
+  width: 100%;
+  height: 30px;
+  margin-bottom: 15px;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+/* BUTTON */
+.bttn {
+  border: none;
+  padding: 10px;
+  width: 100%;
+  background: linear-gradient(to right, #7e2e2e, #c45555, #c67a7a);
+  color: bisque;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.bttn a {
+  color: bisque;
+  text-decoration: none;
+}
+
+.bttn a:hover {
+  color: black;
+}
+
+/* LINKS BELOW FORM */
+.lol {
+  color: bisque;
+}
+
+.lol a {
+  color: bisque;
+}
+
+.lol a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+/* CONTENT */
+.content {
+  margin-top: 20px;
+   color: bisque;
+}
+
+.content h1 {
+  font-size: 22px;
+  margin-bottom: 10px;
+   color: bisque;
+}
+
+.content h2,
+.content h3,
+.content h4,
+.content h5 {
+  font-size: 16px;
+  margin-top: 15px;
+   color: bisque;
+}
+
+.content ul {
+  padding-left: 20px;
+  margin-bottom: 10px;
+  color: bisque;
+}
+
+.content p {
+  margin-bottom: 10px;
+  color: bisque;
+}
+
+/* MEDIA QUERIES */
+
+/* For Tablets and larger (e.g., 768px wide and up) */
+@media (min-width: 768px) {
+    .header {
+        flex-wrap: nowrap; /* No wrapping for header on larger screens */
+        justify-content: flex-start; /* Align logo to left */
+    }
+
+    .logo {
+        margin-bottom: 0; /* Remove bottom margin */
+        margin-right: 30px; /* Space between logo and nav */
+    }
+
+    .nav-links {
+        flex-direction: row; /* Display nav items horizontally */
+        width: auto; /* Allow nav to take only necessary width */
+    }
+
+    .nav-links li {
+        margin: 0 15px; /* Horizontal margin for nav items */
+    }
+
+    .main-content {
+        flex-direction: row; /* Arrange content and form side-by-side */
+        justify-content: space-between;
+        align-items: flex-start; /* Align items to the top */
+    }
+
+    .text-section {
+        width: 65%; /* Text takes 65% width */
+    }
+
+    .form-section {
+        width: 30%; /* Form takes 30% width */
+        max-width: none; /* Remove max-width restriction for larger screens */
+        margin: 0; /* Remove auto margin */
+    }
+}
+
+/* For Desktops and larger (e.g., 1024px wide and up) */
+@media (min-width: 1024px) {
+    body {
+        padding: 40px; /* More padding on larger screens */
+    }
+
+    .header {
+        padding: 15px 40px;
+    }
+
+    .logo {
+        font-size: 2.2em;
+    }
+
+    .nav-links li {
+        margin: 0 20px;
+    }
+
+    .main-content {
+        max-width: 1200px; /* Set a max width for the content area */
+        margin: 0 auto; /* Center the main content */
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .text-section h1 {
+        font-size: 3em;
+    }
+}
+        
